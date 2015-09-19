@@ -263,7 +263,7 @@ var POTIONS = [
   ['worm', 'worm', 'worms'],
   ['worm', 'poo', 'threadworm'],
   ['worms', 'earth', 'wormhole'],
-  ['human', 'earth', 'poo'],
+  ['human', 'food', 'poo'],
   ['life', 'time', 'death'],
   ['rain', 'seed', 'plant'],
   ['rain', 'plant', 'tree'],
@@ -271,8 +271,6 @@ var POTIONS = [
   ['child', 'child', 'friend'],
   ['tree', 'sun', 'shade'],
   ['bubbles', 'blade', 'soap'],
-  ['air', 'steam', 'nothing'],
-  ['nothing', 'time', 'bigbang'],
   ['child', 'bubbles', 'run'],
   ['movement', 'human', 'walk'],
   ['point', 'computer', 'pixel'],
@@ -302,6 +300,7 @@ var POTIONS = [
   ['teeth', 'baby', 'milkteeth'],
   ['blade', 'teeth', 'saw'],
   ['saw', 'electricity', 'chainsaw'],
-  ['rope', 'metal', 'chain']
-
+  ['rope', 'metal', 'chain'],
+  ['hill', 'hill', 'mountain'],
+  ['hill', 'rock', 'mountain']
 ];
