@@ -1,0 +1,66 @@
+body {
+  font-size: 1.6em;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: lightblue;
+  font-size: 1.2em;
+  margin: 0.6em 0;
+  padding: 0
+}
+
+abbr {
+  cursor: help;
+}
+
+#message strong {
+  text-transform: capitalize;
+}
+
+ul#discovered {
+  list-style-position: inside;
+  margin: 1em 0;
+  padding: 0;
+
+  -webkit-column-width: 8em;
+     -moz-column-width: 8em;
+          column-width: 8em;
+}
+
+ul#discovered li {
+  cursor: pointer;
+  display: block;
+  padding: 0.3em 1em 0.2em;
+  text-transform: capitalize;
+}
+
+ul#discovered li:hover {
+  background-color: black;
+  color: white;
+}
+
+ul#discovered li:active {
+  background-color: red;
+  color: white;
+}
+
+ul#discovered li.chosen {
+  background-color: gray;
+  color: white;
+}
+
+ul#discovered li:not(.potential),
+ul#discovered li:not(.potential):hover {
+  color: gray;
+  background-color: transparent;
+  cursor: default;
+  pointer-events: none;
+}
+
+#count {
+  position: absolute;
+  top: 0.7em;
+  right: 1em;
+  color: brown;
+}

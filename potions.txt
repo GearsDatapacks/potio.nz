@@ -1,0 +1,14 @@
+surya+prem's scientist potions
+
+start: fire water air earth
+
+fire water steam
+air water bubbles
+air fire campfire
+air earth  dustcloud
+fire earth lava
+earth water bog
+water water flood
+fire fire fireball
+air air preusre
+earth earth mountain
