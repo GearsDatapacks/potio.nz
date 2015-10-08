@@ -1,13 +1,46 @@
-body {
-  font-size: 1.6em;
-  font-family: sans-serif;
+html {
+  height: 100%;
 }
 
-h1 {
+body {
+  font-size: 1.4em;
+  font-family: sans-serif;
+  /*padding: 2.6em 0.6em 0.3em;*/
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sticky {
+  background-color: green;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.3em 0.6em;
+  box-sizing: border-box;
+}
+
+.scrollable {
+  padding: 0.6em;
+  overflow: scroll;
+}
+
+#potion {
   color: lightblue;
-  font-size: 1.2em;
-  margin: 0.6em 0;
-  padding: 0
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  max-width: calc(100% - 5em);
+}
+
+#count {
+  color: white;
+  display: inline-block;
+  float: right;
 }
 
 abbr {
@@ -31,7 +64,7 @@ ul#discovered {
 ul#discovered li {
   cursor: pointer;
   display: block;
-  padding: 0.3em 1em 0.2em;
+  padding: 0.3em 0 0.2em;
   text-transform: capitalize;
 }
 
@@ -56,11 +89,4 @@ ul#discovered li:not(.potential):hover {
   background-color: transparent;
   cursor: default;
   pointer-events: none;
-}
-
-#count {
-  position: absolute;
-  top: 0.7em;
-  right: 1em;
-  color: brown;
 }

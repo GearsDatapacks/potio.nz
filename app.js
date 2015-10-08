@@ -14,7 +14,8 @@ function chooseIngredient (ingredient) {
 
   if (potion.length === 1) {
     //message = `<strong>${ingredient}</strong> + ?`;
-    message = '<strong>' + ingredient + '</strong> + ?';
+    //message = '<strong>' + ingredient + '</strong> + ?';
+    message = ingredient + ' + ?';
   }
 
   if (potion.length === 2) {
@@ -25,12 +26,14 @@ function chooseIngredient (ingredient) {
     if (child) {
       updateFoundElements(child);
       //message = `<strong>${ingredient1}</strong> + <strong>${ingredient2}</strong> = <strong>${child}</strong>`;
-      message = '<strong>' + ingredient1 + '</strong> + <strong>' + ingredient2 + '</strong> = <strong>' + child + '</strong>';
+      //message = '<strong>' + ingredient1 + '</strong> + <strong>' + ingredient2 + '</strong> = <strong>' + child + '</strong>';
+      message = ingredient1 + ' + ' + ingredient2 + ' = ' + child;
     }
 
     else {
       //message = `<strong>${ingredient1}</strong> + <strong>${ingredient2}</strong> = nothing`;
-      message = '<strong>' + ingredient1 + '</strong> + <strong>' + ingredient2 + '</strong> = nothing';
+      //message = '<strong>' + ingredient1 + '</strong> + <strong>' + ingredient2 + '</strong> = nothing';
+      message = ingredient1 + ' + ' + ingredient2 + ' = nothing';
     }
 
     // Empty the `potion` array
@@ -40,7 +43,7 @@ function chooseIngredient (ingredient) {
     displayIngredients();
   }
 
-  displayMessage(message);
+  displayPotion(message);
 }
 
 function lookupResult (ingredient1, ingredient2) {
@@ -89,6 +92,11 @@ function addListeners () {
       target.classList.add('chosen');
     }
   });
+}
+
+function displayPotion (message) {
+  var el = document.getElementById('potion');
+  el.innerHTML = message;
 }
 
 function displayMessage (message) {
@@ -161,7 +169,7 @@ function restore () {
   if (STORAGE_KEY in localStorage) {
     discoveredIngredients = JSON.parse(localStorage[STORAGE_KEY]);
   }
-  
+
   displayIngredients();
   displayStartMessage();
 }
