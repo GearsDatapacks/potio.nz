@@ -73,7 +73,7 @@ var POTIONS = [
   ['love', 'ring', 'marriage'],
   ['marriage', 'human', 'baby'],
   ['time', 'baby', 'child'],
-  ['sky', 'water', 'cloud'], 
+  ['sky', 'water', 'cloud'],
   ['sun', 'rain', 'rainbow'],
   ['boiler', 'water', 'hotwater'],
   ['child', 'time', 'teenager'],
@@ -281,7 +281,7 @@ var POTIONS = [
   ['house', 'work', 'office'],
   ['explosion', 'volcano', 'eruption'],
   ['moon', 'asteroid', 'crater'],
-  ['sea', 'path', 'miracale'],  
+  ['sea', 'path', 'miracale'],
   ['pressure', 'pressure', 'explosion'],
   ['movement', 'air', 'sound'],
   ['human', 'sound', 'talk'],
@@ -302,5 +302,11 @@ var POTIONS = [
   ['saw', 'electricity', 'chainsaw'],
   ['rope', 'metal', 'chain'],
   ['hill', 'hill', 'mountain'],
-  ['hill', 'rock', 'mountain']
+  ['hill', 'rock', 'mountain'],
+  ['lava', 'water', 'rock'],
+  ['plant', 'earth', 'grass'],
+  ['grass', 'sun', 'hay'],
+  ['hay', 'life', 'horse'],
+  ['horse', 'car', 'cart'],
+  ['cart', 'wheel', 'cartwheel']
 ];

@@ -83,8 +83,9 @@ function displayIngredients () {
 }
 
 function addListeners () {
-  var list = document.getElementById('discovered');
-  list.addEventListener('click', function (event) {
+  var discoveredList = document.getElementById('discovered');
+
+  discoveredList.addEventListener('click', function (event) {
     var target = event.target;
     if (target && target.nodeName === 'LI') {
       var ingredient = event.target.textContent;
@@ -92,6 +93,39 @@ function addListeners () {
       target.classList.add('chosen');
     }
   });
+
+  // When header off-screen, enable scrollable ingredients
+  // var headerElem = document.querySelector('body > header');
+  // var headerHeight = headerElem.clientHeight;
+  // var boardElem = document.getElementById('board');
+  // var scrollingEnabled = false;
+
+  // window.addEventListener('scroll', function (event) {
+  //   var scrollY = document.body.scrollTop;
+  //   var headerIsVisible;
+
+  //   if (!scrollingEnabled) {
+  //     headerIsVisible = scrollY < headerHeight;
+  //   }
+
+  //   else {
+  //     headerIsVisible = scrollY === 0;
+  //   }
+
+  //   console.log('scroll', {scrollY, headerHeight, headerIsVisible});
+
+  //   if (headerIsVisible && scrollingEnabled) {
+  //     boardElem.classList.remove('scrollable');
+  //     headerElem.classList.add('shiftY');
+  //     scrollingEnabled = false;
+  //   }
+
+  //   else if (!headerIsVisible && !scrollingEnabled) {
+  //     boardElem.classList.add('scrollable');
+  //     headerElem.classList.remove('shiftY');
+  //     scrollingEnabled = true;
+  //   }
+  // });
 }
 
 function displayPotion (message) {

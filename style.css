@@ -15,19 +15,26 @@ body {
   pointer-events: none;
 }
 
-.sticky {
+body > header {
   background-color: green;
-  width: 100%;
+  width: calc(100% - 1.2em);
   top: 0;
   left: 0;
-  padding: 0.3em 0.6em;
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0.3em 0.6em 0.5em;
+}
+
+.shiftY {
+  transform: translate(-100%);
+}
+
+#board {
+  padding: 0.6em;
+  pointer-events: all;
 }
 
 .scrollable {
-  padding: 0.6em;
   overflow: scroll;
-  pointer-events: all;
 }
 
 #potion {
@@ -55,6 +62,12 @@ abbr {
   text-transform: capitalize;
 }
 
+
+ul#discovered,
+ul#discovered li {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 ul#discovered {
   list-style-position: inside;
   margin: 1em 0;
@@ -65,6 +78,12 @@ ul#discovered {
           column-width: 8em;
 }
 
+@media (max-width: 600px) {
+  ul#discovered {
+    margin-right: 2em;
+  }
+}
+
 ul#discovered li {
   cursor: pointer;
   display: block;
@@ -72,7 +91,6 @@ ul#discovered li {
   text-transform: capitalize;
   -webkit-user-select: none;
   user-select: none;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 ul#discovered li:hover {
