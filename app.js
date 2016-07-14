@@ -95,37 +95,37 @@ function addListeners () {
   });
 
   // When header off-screen, enable scrollable ingredients
-  // var headerElem = document.querySelector('body > header');
-  // var headerHeight = headerElem.clientHeight;
-  // var boardElem = document.getElementById('board');
-  // var scrollingEnabled = false;
+  var headerElem = document.querySelector('header');
+  var headerHeight = headerElem.clientHeight;
+  var boardElem = document.getElementById('board');
+  var scrollingEnabled = false;
 
-  // window.addEventListener('scroll', function (event) {
-  //   var scrollY = document.body.scrollTop;
-  //   var headerIsVisible;
+  window.addEventListener('scroll', function (event) {
+    var scrollY = document.body.scrollTop;
+    var headerIsVisible;
 
-  //   if (!scrollingEnabled) {
-  //     headerIsVisible = scrollY < headerHeight;
-  //   }
+    if (!scrollingEnabled) {
+      headerIsVisible = scrollY < headerHeight;
+    }
 
-  //   else {
-  //     headerIsVisible = scrollY === 0;
-  //   }
+    else {
+      headerIsVisible = scrollY === 0;
+    }
 
-  //   console.log('scroll', {scrollY, headerHeight, headerIsVisible});
+    console.log('scroll', {scrollY, headerHeight, headerIsVisible});
 
-  //   if (headerIsVisible && scrollingEnabled) {
-  //     boardElem.classList.remove('scrollable');
-  //     headerElem.classList.add('shiftY');
-  //     scrollingEnabled = false;
-  //   }
+    if (headerIsVisible && scrollingEnabled) {
+      boardElem.classList.remove('scrollable');
+      headerElem.classList.add('shiftY');
+      scrollingEnabled = false;
+    }
 
-  //   else if (!headerIsVisible && !scrollingEnabled) {
-  //     boardElem.classList.add('scrollable');
-  //     headerElem.classList.remove('shiftY');
-  //     scrollingEnabled = true;
-  //   }
-  // });
+    else if (!headerIsVisible && !scrollingEnabled) {
+      boardElem.classList.add('scrollable');
+      headerElem.classList.remove('shiftY');
+      scrollingEnabled = true;
+    }
+  });
 }
 
 function displayPotion (message) {
