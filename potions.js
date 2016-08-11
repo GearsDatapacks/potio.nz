@@ -277,7 +277,7 @@ var POTIONS = [
   ['explosion', 'explosion', 'bigbang'],
   ['bigbang', 'time', 'universe'],
   ['universe', 'human', 'spirit'],
-  ['spirit', 'human', 'conchesnes'],
+  ['spirit', 'human', 'consciousness'],
   ['house', 'work', 'office'],
   ['explosion', 'volcano', 'eruption'],
   ['moon', 'asteroid', 'crater'],
@@ -285,7 +285,7 @@ var POTIONS = [
   ['pressure', 'pressure', 'explosion'],
   ['movement', 'air', 'sound'],
   ['human', 'sound', 'talk'],
-  ['baby', 'talk', 'nonsens'],
+  ['baby', 'talk', 'nonsense'],
   ['baby', 'sound', 'cry'],
   ['baby', 'movement', 'crawl'],
   ['movement', 'earth', 'earthqake'],
@@ -311,5 +311,6 @@ var POTIONS = [
   ['cart', 'wheel', 'cartwheel'],
   ['animal', 'forest', 'wildanimal'],
   ['animal', 'mountain', 'ibex'],
-  ['ibex', 'earth','goat']
+  ['ibex', 'earth','goat'],
+  ['human', 'human', 'group']
 ];

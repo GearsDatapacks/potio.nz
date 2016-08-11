@@ -18,6 +18,7 @@ body {
 #info {
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 
 header {
@@ -80,9 +81,9 @@ ul#discovered {
   margin: 1em 0;
   padding: 0;
 
-  -webkit-column-width: 8em;
-     -moz-column-width: 8em;
-          column-width: 8em;
+  -webkit-column-width: 10em;
+     -moz-column-width: 10em;
+          column-width: 10em;
 }
 
 @media (max-width: 600px) {
@@ -94,13 +95,31 @@ ul#discovered {
 ul#discovered li {
   cursor: pointer;
   display: block;
-  padding: 0.3em 0 0 0;
-  margin-bottom: 0.1em;
+  padding: 0; /*calc(32px + 0.62em);*/
+  margin: 0.1em 0;
   text-transform: capitalize;
   -webkit-user-select: none;
   user-select: none;
   position: relative;
+  min-height: 32px;
 }
+
+ul#discovered li svg {
+  margin-right: 0.4em;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+}
+
+// ul#discovered li:before {
+//   content: "";
+//   top: 0;
+//   left: 0;
+//   width: 32px;
+//   height: 32px;
+//   background-color: darkgray;
+//   position: absolute;
+// }
 
 ul#discovered li:hover {
   background-color: black;

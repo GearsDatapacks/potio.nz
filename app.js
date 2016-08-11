@@ -1,5 +1,10 @@
 "use strict";
 
+Pablo(document.body).load('/images/all.svg', function (sprite) {
+  sprite.css('display', 'none');
+  displayIngredients();
+});
+
 var START_INGREDIENTS = ['air', 'earth', 'fire', 'water'];
 
 // Copy the starting ingredients
@@ -75,9 +80,22 @@ function displayIngredients () {
     var className = hasPotential ? 'potential' : '';
 
     //listItems += `<li class="${className}">${ingredient}</li>`;
-    listItems += '<li class="' + className + '">' + ingredient + '</li>';
+    listItems += '<li data-ingredient="' + ingredient + '" class="' + className + '">' + ingredient + '</li>';
   });
   list.innerHTML = listItems;
+
+  Pablo(list).children().forEach(function (item) {
+    var ingredient = item.getAttribute('data-ingredient');
+    var image = Pablo('#' + ingredient);
+
+    if (!image) {
+      return;
+    }
+
+    var imageRoot = Pablo.svg().append(image.clone()).crop();
+
+    imageRoot.prependTo(item);
+  });
 
   displayCount();
 }
@@ -88,7 +106,7 @@ function addListeners () {
   discoveredList.addEventListener('click', function (event) {
     var target = event.target;
     if (target && target.nodeName === 'LI') {
-      var ingredient = event.target.textContent;
+      var ingredient = event.target.getAttribute('data-ingredient');
       chooseIngredient(ingredient);
       target.classList.add('chosen');
     }
