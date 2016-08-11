@@ -20,7 +20,7 @@ var POTIONS = [
   ['seed', 'earth', 'plant'],
   ['metal', 'steam', 'boiler'],
   ['plant', 'water', 'tree'],
-  ['life', 'tree', 'ape'],
+  ['animal', 'tree', 'ape'],
   ['life', 'life', 'movement'],
   ['space', 'movement', 'time'],
   ['time', 'ape', 'human'],
@@ -294,8 +294,8 @@ var POTIONS = [
   ['river', 'ice', 'glacier'],
   ['river', 'rock', 'waterfall'],
   ['cloth', 'human', 'clothes'],
-  ['life', 'forest', 'anamal'],
-  ['anamal', 'human', 'pet'],
+  ['life', 'forest', 'animal'],
+  ['animal', 'human', 'pet'],
   ['milk', 'baby','teeth'],
   ['teeth', 'baby', 'milkteeth'],
   ['blade', 'teeth', 'saw'],
@@ -306,7 +306,10 @@ var POTIONS = [
   ['lava', 'water', 'rock'],
   ['plant', 'earth', 'grass'],
   ['grass', 'sun', 'hay'],
-  ['hay', 'life', 'horse'],
+  ['hay', 'animal', 'horse'],
   ['horse', 'car', 'cart'],
-  ['cart', 'wheel', 'cartwheel']
+  ['cart', 'wheel', 'cartwheel'],
+  ['animal', 'forest', 'wildanimal'],
+  ['animal', 'mountain', 'ibex'],
+  ['ibex', 'earth','goat']
 ];

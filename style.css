@@ -15,6 +15,11 @@ body {
   pointer-events: none;
 }
 
+#info {
+  width: 100%;
+  position: fixed;
+}
+
 header {
   background-color: green;
   width: calc(100% - 1.2em);
@@ -30,6 +35,7 @@ header {
 }
 
 #board {
+  margin-top: 2em;
   padding: 0.6em;
   pointer-events: all;
 }
@@ -88,10 +94,12 @@ ul#discovered {
 ul#discovered li {
   cursor: pointer;
   display: block;
-  padding: 0.3em 0 0.2em;
+  padding: 0.3em 0 0 0;
+  margin-bottom: 0.1em;
   text-transform: capitalize;
   -webkit-user-select: none;
   user-select: none;
+  position: relative;
 }
 
 ul#discovered li:hover {
