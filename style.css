@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   height: 100vh;
   pointer-events: none;
+  min-width: 320px;
 }
 
 #info {
@@ -36,7 +37,7 @@ header {
 }
 
 #board {
-  margin-top: 2em;
+  margin-top: 4em;
   padding: 0.6em;
   pointer-events: all;
 }
@@ -78,7 +79,7 @@ ul#discovered li {
 
 ul#discovered {
   list-style-position: inside;
-  margin: 1em 0;
+  margin: 2em 0;
   padding: 0;
 
   -webkit-column-width: 10em;
