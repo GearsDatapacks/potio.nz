@@ -183,7 +183,7 @@ var POTIONS = [
   ['water', 'lava', 'rock'],
   ['star', 'explosion', 'supernova'],
   ['space', 'water', 'ice'],
-  ['ice', 'space', 'comet'],
+  ['ice', 'asteroid', 'comet'],
   ['comet', 'earth', 'life'],
   ['wind', 'wind', 'hurricane'],
   ['pressure', 'water', 'whirlpool'],
@@ -320,5 +320,10 @@ var POTIONS = [
   ['blacksmith' ,'oven' ,'forge'],
   ['forge' ,'metal' ,'meltedmetal'],
   ['animal' ,'animal' ,'pack'],
-  ['bird','bird' ,'flock']
+  ['bird','bird' ,'flock'],
+  ['desert','storm' ,'sandstorm'],
+  ['human','computer' ,'programmer'],
+  ['human','wood' ,'carpenter'],
+  ['human','car' ,'mechanic'],
+  ['university','town' ,'city']
 ];
