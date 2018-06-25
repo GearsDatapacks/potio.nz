@@ -326,5 +326,6 @@ var POTIONS = [
   ['asteroid' ,'ice' ,'comet'],
   ['comet' ,'earth' ,'life'],
   ['space' ,'water' ,'ice'],
-  ['ice' ,'space' ,'comet']
+  ['ice' ,'space' ,'comet'],
+  ['movement' ,'star' ,'shootingstar']
 ];
