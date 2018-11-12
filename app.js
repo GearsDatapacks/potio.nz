@@ -1,6 +1,6 @@
 "use strict";
 
-Pablo(document.body).load('/images/all.svg', function (sprite) {
+Pablo(document.body).load('images/all.svg', function (sprite) {
   sprite.css('display', 'none');
   displayIngredients();
 });

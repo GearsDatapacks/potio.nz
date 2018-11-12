@@ -47,6 +47,20 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+  <g id="tree">
+    <line 
+    stroke-width="10"
+    stroke="brown"
+    x1="350"
+    y1="250"
+    x2="350"
+    y2="200"/>
+    <path
+    fill="green"
+    stroke="green"
+    stroke-width="6"
+    d="M350,200 l25,35 M350,220 l25,35 M350,200 l-25,35 M350,220 l-25,35"/>
+  </g>
   <path 
   fill="white"
   stroke="black"
@@ -93,6 +107,44 @@
     stroke-width="1"
     d="M370,300 l14.5,-25 c5,10 5,-12.5 5,25"/>
   </g>
+  <g id="forest">
+    <line 
+    stroke-width="10"
+    stroke="brown"
+    x1="350"
+    y1="250"
+    x2="350"
+    y2="200"/>
+    <line 
+    stroke-width="10"
+    stroke="brown"
+    x1="390"
+    y1="250"
+    x2="390"
+    y2="200"/>
+    <path
+    fill="green"
+    stroke="green"
+    stroke-width="6"
+    d="M350,200 l25,35 M350,220 l25,35 M350,200 l-25,35 M350,220 l-25,35
+    M390,200 l25,35 M390,220 l25,35 M390,200 l-25,35 M390,220 l-25,35"/>
+  </g>
+  <g id="human">
+  <circle 
+  r="20"
+  cx="20"
+  cy="155"
+  fill="tan"
+  stroke="black"
+  stroke-width="3"
+  />
+  <path 
+  fill="none"
+  stroke="black"
+  stroke-width="3"
+  d="m0,250 l20,-25 l20,25 l-20,-25 l0,-50 m-20,25 l20,-25 l20,25 l-20,-25 m10,-15 q-7.5,10 -15 0 m0,-15 l0,3 m15,0 l0,3"
+  />
+      </g>
   <g id="eruption">
    <path 
     fill="gray"
