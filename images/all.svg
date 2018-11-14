@@ -395,7 +395,7 @@
   <g
      id="bubbles">
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-dasharray:none"
+       style="fill:white;stroke:#000000;stroke-width:3;stroke-dasharray:none"
        inkscape:connector-curvature="0"
        stroke-linejoin="null"
        stroke-linecap="null"
