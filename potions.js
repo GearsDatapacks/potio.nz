@@ -372,5 +372,12 @@ var POTIONS = [
   ['milk', 'food', 'cheese'],
   ['cheese', 'water', 'yogurt'],
   ['yogurt', 'cheese', 'dairy'],
-  ['yogurt', 'water', 'yogurtdrink']
+  ['yogurt', 'water', 'yogurtdrink'],
+  ['mountain', 'house', 'cave'],
+  ['cave', 'human', 'caveman'],
+  ['fire', 'animal', 'dragon'],
+  ['fire', 'bird', 'phoenix'],
+  ['fire', 'forest', 'forestfire'],
+  ['wood', 'saw', 'planks'],
+  ['planks', 'builder', 'cabin']
 ];
